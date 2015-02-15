@@ -1,0 +1,647 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdftex 2015.2.15)  15 FEB 2015 16:53
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**"Alexander McGinn.tex"
+(./Alexander McGinn.tex
+! Undefined control sequence.
+l.21 \documentclass
+                   [letterpaper]{scrartcl}
+? 
+! Undefined control sequence.
+l.23 \reversemarginpar
+                       % Move the margin to the left of the page
+? 
+! Undefined control sequence.
+l.25 \newcommand
+                {\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} % ...
+
+? 
+! Undefined control sequence.
+l.25 \newcommand{\MarginText
+                            }[1]{\marginpar{\raggedleft\itshape\small#1}} % ...
+
+? 
+! Undefined control sequence.
+l.25 \newcommand{\MarginText}[1]{\marginpar
+                                           {\raggedleft\itshape\small#1}} % ...
+
+? 
+! Undefined control sequence.
+l.25 ...and{\MarginText}[1]{\marginpar{\raggedleft
+                                                  \itshape\small#1}} % New c...
+
+? 
+! Undefined control sequence.
+l.25 ...ginText}[1]{\marginpar{\raggedleft\itshape
+                                                  \small#1}} % New command d...
+
+? 
+! Undefined control sequence.
+l.25 ...t}[1]{\marginpar{\raggedleft\itshape\small
+                                                  #1}} % New command definin...
+
+? 
+! You can't use `macro parameter character #' in horizontal mode.
+l.25 ...}[1]{\marginpar{\raggedleft\itshape\small#
+                                                  1}} % New command defining...
+
+? 
+! Undefined control sequence.
+l.28 \newcommand
+                {\TitleText}[1]{\hangindent=2em\hangafter=0\noindent\raggedr...
+
+? 
+! Undefined control sequence.
+l.28 \newcommand{\TitleText
+                           }[1]{\hangindent=2em\hangafter=0\noindent\raggedr...
+
+? 
+! Undefined control sequence.
+l.28 ...angafter=0\noindent\raggedright\normalsize
+                                                  {#1}\par\normalsize\hspace...
+
+? 
+! You can't use `macro parameter character #' in horizontal mode.
+l.28 ...gafter=0\noindent\raggedright\normalsize{#
+                                                  1}\par\normalsize\hspace{1...
+
+? 
+! Undefined control sequence.
+l.28 ...\raggedright\normalsize{#1}\par\normalsize
+                                                  \hspace{1.5em}}
+? 
+! Undefined control sequence.
+l.28 ...right\normalsize{#1}\par\normalsize\hspace
+                                                  {1.5em}}
+? 
+! Undefined control sequence.
+l.31 \usepackage
+                [nochapters]{classicthesis} % Use the classicthesis style fo...
+
+? 
+! Undefined control sequence.
+l.32 \usepackage
+                [LabelsAligned]{currvita} % Use the currvita style for the l...
+
+? 
+! Undefined control sequence.
+l.34 \renewcommand
+                  {\cvheadingfont}{\huge\color{Maroon}} % Font color of your...
+
+? 
+! Undefined control sequence.
+l.34 \renewcommand{\cvheadingfont
+                                 }{\huge\color{Maroon}} % Font color of your...
+
+? 
+! Undefined control sequence.
+l.34 \renewcommand{\cvheadingfont}{\huge
+                                        \color{Maroon}} % Font color of your...
+
+? 
+! Undefined control sequence.
+l.34 \renewcommand{\cvheadingfont}{\huge\color
+                                              {Maroon}} % Font color of your...
+
+? 
+! Undefined control sequence.
+l.36 \usepackage
+                {hyperref} % Required for adding links	and customizing them
+? 
+! Undefined control sequence.
+l.37 \hypersetup
+                {colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon} ...
+
+? 
+! Undefined control sequence.
+l.39 \newlength
+               {\datebox}\settowidth{\datebox}{Spring 2011} % Set the width ...
+
+? 
+! Undefined control sequence.
+l.39 \newlength{\datebox
+                        }\settowidth{\datebox}{Spring 2011} % Set the width ...
+
+? 
+! Undefined control sequence.
+l.39 \newlength{\datebox}\settowidth
+                                    {\datebox}{Spring 2011} % Set the width ...
+
+? 
+! Undefined control sequence.
+l.39 \newlength{\datebox}\settowidth{\datebox
+                                             }{Spring 2011} % Set the width ...
+
+? 
+! Undefined control sequence.
+l.41 \newcommand
+                {\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0 \parbox{...
+
+? 
+! Undefined control sequence.
+l.41 \newcommand{\NewEntry
+                          }[3]{\noindent\hangindent=2em\hangafter=0 \parbox{...
+
+? 
+! Undefined control sequence.
+l.41 ...oindent\hangindent=2em\hangafter=0 \parbox
+                                                  {\datebox}{\small \textit{...
+
+? 
+! Undefined control sequence.
+l.41 ...angindent=2em\hangafter=0 \parbox{\datebox
+                                                  }{\small \textit{#1}}\hspa...
+
+? 
+! Undefined control sequence.
+l.41 ...t=2em\hangafter=0 \parbox{\datebox}{\small
+                                                   \textit{#1}}\hspace{1.5em...
+
+? 
+! Undefined control sequence.
+l.41 ...ngafter=0 \parbox{\datebox}{\small \textit
+                                                  {#1}}\hspace{1.5em} #2 #3 ...
+
+? 
+! You can't use `macro parameter character #' in horizontal mode.
+l.41 ...after=0 \parbox{\datebox}{\small \textit{#
+                                                  1}}\hspace{1.5em} #2 #3 % ...
+
+? 
+! Undefined control sequence.
+l.41 ...arbox{\datebox}{\small \textit{#1}}\hspace
+                                                  {1.5em} #2 #3 % Define a c...
+
+? 
+! You can't use `macro parameter character #' in horizontal mode.
+l.41 ...tebox}{\small \textit{#1}}\hspace{1.5em} #
+                                                  2 #3 % Define a command fo...
+
+? 
+! You can't use `macro parameter character #' in horizontal mode.
+l.41 ...ox}{\small \textit{#1}}\hspace{1.5em} #2 #
+                                                  3 % Define a command for e...
+
+? 
+! Undefined control sequence.
+l.42 \vspace
+            {0.5em}} % Add some white space after each new entry
+? 
+! Undefined control sequence.
+l.44 \newcommand
+                {\Description}[1]{\hangindent=2em\hangafter=0\noindent\ragge...
+
+? 
+! Undefined control sequence.
+l.44 \newcommand{\Description
+                             }[1]{\hangindent=2em\hangafter=0\noindent\ragge...
+
+? 
+! Undefined control sequence.
+l.44 ...gafter=0\noindent\raggedright\footnotesize
+                                                  {#1}\par\normalsize\vspace...
+
+? 
+! You can't use `macro parameter character #' in horizontal mode.
+l.44 ...fter=0\noindent\raggedright\footnotesize{#
+                                                  1}\par\normalsize\vspace{1...
+
+? 
+! Undefined control sequence.
+l.44 ...aggedright\footnotesize{#1}\par\normalsize
+                                                  \vspace{1em}} % Define a c...
+
+? 
+! Undefined control sequence.
+l.44 ...ght\footnotesize{#1}\par\normalsize\vspace
+                                                  {1em}} % Define a command ...
+
+? 
+! Undefined control sequence.
+l.47 \topmargin
+                -1.0 in
+? 
+! Undefined control sequence.
+l.50 \begin
+           {document}
+? 
+! Undefined control sequence.
+l.52 \thispagestyle
+                   {empty} % Stop the page count at the bottom of the first ...
+
+? 
+! Undefined control sequence.
+l.58 \begin
+           {cv}{\spacedallcaps{Alexander McGinn}}\vspace{1.5em} % Your name
+? 
+! Undefined control sequence.
+l.58 \begin{cv}{\spacedallcaps
+                              {Alexander McGinn}}\vspace{1.5em} % Your name
+? 
+! Undefined control sequence.
+l.58 ...}{\spacedallcaps{Alexander McGinn}}\vspace
+                                                  {1.5em} % Your name
+? 
+! Undefined control sequence.
+l.60 \noindent\spacedlowsmallcaps
+                                 {Personal Information}\vspace{0.5em} % Pers...
+
+? 
+! Undefined control sequence.
+l.60 ...dlowsmallcaps{Personal Information}\vspace
+                                                  {0.5em} % Personal informa...
+
+? 
+! Undefined control sequence.
+l.64 \NewEntry
+              {email}{\href{mailto:alexander.mcginn@invesco.com}{alexander.m...
+
+? 
+! Undefined control sequence.
+l.64 \NewEntry{email}{\href
+                           {mailto:alexander.mcginn@invesco.com}{alexander.m...
+
+? 
+! Undefined control sequence.
+l.68 \NewEntry
+              {phone}{+1 (416) 324 7759 (w), +1 (416) 662 9666 (m)} % Phone ...
+
+? 
+! Undefined control sequence.
+l.70 \vspace
+            {0.75em} % Extra white space between the personal information se...
+
+? 
+! Undefined control sequence.
+l.72 \noindent\spacedlowsmallcaps
+                                 {Goal}\vspace{1em} % Goal heading, could be...
+
+? 
+! Undefined control sequence.
+l.72 \noindent\spacedlowsmallcaps{Goal}\vspace
+                                              {1em} % Goal heading, could be...
+
+? 
+! Undefined control sequence.
+l.74 \Description
+                 {Practice and demonstrate quantitative abilities and data a...
+
+? 
+! Undefined control sequence.
+l.74 ... and intelligent coworkers. Learn.}\vspace
+                                                  {1.5em} % Goal text
+? 
+! Undefined control sequence.
+l.80 \noindent\spacedlowsmallcaps
+                                 {Work Experience}\vspace{1.5em}
+? 
+! Undefined control sequence.
+l.80 ...spacedlowsmallcaps{Work Experience}\vspace
+                                                  {1.5em}
+? 
+! Undefined control sequence.
+l.82 \TitleText
+               {\MarginText{Oct 2013--Present}Product Research Analyst,  \te...
+
+? 
+! Undefined control sequence.
+l.82 \TitleText{\MarginText
+                           {Oct 2013--Present}Product Research Analyst,  \te...
+
+? 
+! Undefined control sequence.
+l.82 ...Present}Product Research Analyst,  \textsc
+                                                  {Invesco Canada}}
+? 
+! Undefined control sequence.
+l.84 \Description
+                 {\MarginText{Summary}Researching and analysing market and f...
+
+? 
+! Undefined control sequence.
+l.84 \Description{\MarginText
+                             {Summary}Researching and analysing market and f...
+
+? 
+! Undefined control sequence.
+l.85 \Description
+                 {\MarginText{Accomplishmen¬¢¬£ts}$\cdotp$\ Assisted and sup...
+
+? 
+! Undefined control sequence.
+l.85 \Description{\MarginText
+                             {Accomplishmen¬¢¬£ts}$\cdotp$\ Assisted and sup...
+
+? 
+Missing character: There is no ¬ in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+Missing character: There is no ¬ in font cmr10!
+Missing character: There is no £ in font cmr10!
+! Undefined control sequence.
+l.86 \newline
+              $\cdotp$\ Updated fund comparisons and sales decks
+? 
+! Undefined control sequence.
+l.87 \newline
+              $\cdotp$\ Generated ad-hoc analytical reports
+? 
+! Undefined control sequence.
+l.88 \newline
+              $\cdotp$\ Created model portfolios and alternative fund compar...
+
+? 
+! Undefined control sequence.
+l.92 \vspace
+            {0.5em}
+? 
+! Undefined control sequence.
+l.93 \TitleText
+               {\MarginText{July--Sept 2013}Marketing Coordinator - Intern, ...
+
+? 
+! Undefined control sequence.
+l.93 \TitleText{\MarginText
+                           {July--Sept 2013}Marketing Coordinator - Intern, ...
+
+? 
+! Undefined control sequence.
+l.93 ...3}Marketing Coordinator - Intern,  \textsc
+                                                  {Invesco Canada}}
+? 
+! Undefined control sequence.
+l.95 \Description
+                 {\MarginText{Summary}Coordinated with multiple partners to ...
+
+? 
+! Undefined control sequence.
+l.95 \Description{\MarginText
+                             {Summary}Coordinated with multiple partners to ...
+
+? 
+! Undefined control sequence.
+l.96 \Description
+                 {\MarginText{Accomplishmen¬¢¬£ts}$\cdotp$\ Managed delivery...
+
+? 
+! Undefined control sequence.
+l.96 \Description{\MarginText
+                             {Accomplishmen¬¢¬£ts}$\cdotp$\ Managed delivery...
+
+? 
+Missing character: There is no ¬ in font cmr10!
+Missing character: There is no ¢ in font cmr10!
+Missing character: There is no ¬ in font cmr10!
+Missing character: There is no £ in font cmr10!
+! Undefined control sequence.
+l.97 \newline
+              $\cdotp$\ Demonstrated attention to detail - noticed and corre...
+
+? 
+! Undefined control sequence.
+l.98 \newline
+              $\cdotp$\ Provided input and generated ideas to position produ...
+
+? 
+! Undefined control sequence.
+l.102 \vspace
+             {0.5em}
+? 
+! Undefined control sequence.
+l.103 \TitleText
+                {\MarginText{2010--June 2013}Client Relationship Associate, ...
+
+? 
+! Undefined control sequence.
+l.103 \TitleText{\MarginText
+                            {2010--June 2013}Client Relationship Associate, ...
+
+? 
+! Undefined control sequence.
+l.103 ...13}Client Relationship Associate, \textsc
+                                                  {Invesco Canada}}
+? 
+! Undefined control sequence.
+l.105 \Description
+                  {\MarginText{Summary}Responded to inbound inquiries from f...
+
+? 
+! Undefined control sequence.
+l.105 \Description{\MarginText
+                              {Summary}Responded to inbound inquiries from f...
+
+? 
+! Undefined control sequence.
+l.106 \Description
+                  {\MarginText{Accomplishments}$\cdotp$\ Became product expe...
+
+? 
+! Undefined control sequence.
+l.106 \Description{\MarginText
+                              {Accomplishments}$\cdotp$\ Became product expe...
+
+? 
+! Undefined control sequence.
+l.107 \newline
+               $\cdotp$\ Lead presentations on ‚ÄúThe Invesco Story‚Äù ensur...
+
+? 
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+! Undefined control sequence.
+l.108 \newline
+               $\cdotp$\ Generated numerous sales leads for Sales department
+? 
+! Undefined control sequence.
+l.109 \newline
+               $\cdotp$\ Chosen to work on joint Sales initiative to proacti...
+
+? 
+! Undefined control sequence.
+l.153 \vspace
+             {1em} % Extra space between major sections
+? 
+! Undefined control sequence.
+l.158 \newpage
+              
+? 
+! Undefined control sequence.
+l.159 \spacedlowsmallcaps
+                         {Education}\vspace{1em}
+? 
+! Undefined control sequence.
+l.159 \spacedlowsmallcaps{Education}\vspace
+                                           {1em}
+? 
+! Undefined control sequence.
+l.162 \TitleText
+                {\MarginText{2011}McGill University}
+? 
+! Undefined control sequence.
+l.162 \TitleText{\MarginText
+                            {2011}McGill University}
+? 
+! Undefined control sequence.
+l.164 \Description
+                  {\MarginText{Bachelor of Science}Learned critical thinking...
+
+? 
+! Undefined control sequence.
+l.164 \Description{\MarginText
+                              {Bachelor of Science}Learned critical thinking...
+
+? 
+! Undefined control sequence.
+l.175 \vspace
+             {1em} % Extra space between major sections
+? 
+! Undefined control sequence.
+l.181 \spacedlowsmallcaps
+                         {Professional Accreditations}\vspace{1em}
+? 
+! Undefined control sequence.
+l.181 ...lcaps{Professional Accreditations}\vspace
+                                                  {1em}
+? 
+! Undefined control sequence.
+l.183 \Description
+                  {\MarginText{CFAI}2014\ \ $\cdotp$\ \ CFA Level II Candidate}
+
+? 
+! Undefined control sequence.
+l.183 \Description{\MarginText
+                              {CFAI}2014\ \ $\cdotp$\ \ CFA Level II Candidate}
+
+? 
+! Undefined control sequence.
+l.185 \vspace
+             {-0.5em} % Negative vertical space to counteract the vertical s...
+
+? 
+! Undefined control sequence.
+l.187 \Description
+                  {\MarginText{CSI}2014\ \ $\cdotp$\ \ Financial Markets - R...
+
+? 
+! Undefined control sequence.
+l.187 \Description{\MarginText
+                              {CSI}2014\ \ $\cdotp$\ \ Financial Markets - R...
+
+? 
+! Undefined control sequence.
+l.189 \vspace
+             {-0.5em} % Negative vertical space to counteract the vertical s...
+
+? 
+! Undefined control sequence.
+l.191 \Description
+                  {2012\ \ $\cdotp$\ \ Derivatives Fundamentals and Options ...
+
+? 
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+! Undefined control sequence.
+l.193 \vspace
+             {-0.5em} % Negative vertical space to counteract the vertical s...
+
+? 
+! Undefined control sequence.
+l.195 \Description
+                  {2011\ \ $\cdotp$\ \ Canadian Securities Course}
+? 
+! Undefined control sequence.
+l.197 \vspace
+             {-0.5em} % Negative vertical space to counteract the vertical s...
+
+? 
+! Undefined control sequence.
+l.199 \Description
+                  {\MarginText{IFSE}2010\ \ $\cdotp$\ \ Canadian Investment ...
+
+? 
+! Undefined control sequence.
+l.199 \Description{\MarginText
+                              {IFSE}2010\ \ $\cdotp$\ \ Canadian Investment ...
+
+? 
+! Undefined control sequence.
+l.201 \vspace
+             {-0.5em} % Negative vertical space to counteract the vertical s...
+
+? 
+! Undefined control sequence.
+l.203 \Description
+                  {\MarginText{Bloomberg}2010\ \ $\cdotp$\ \ Bloomberg Termi...
+
+? 
+! Undefined control sequence.
+l.203 \Description{\MarginText
+                              {Bloomberg}2010\ \ $\cdotp$\ \ Bloomberg Termi...
+
+? 
+! Undefined control sequence.
+l.213 \vspace
+             {1em} % Extra space between major sections
+? 
+! Undefined control sequence.
+l.219 \spacedlowsmallcaps
+                         {Other Skills}\vspace{1em}
+? 
+! Undefined control sequence.
+l.219 \spacedlowsmallcaps{Other Skills}\vspace
+                                              {1em}
+? 
+! Undefined control sequence.
+l.221 \Description
+                  {\MarginText{Interpersonal}Strong relationship building sk...
+
+? 
+! Undefined control sequence.
+l.221 \Description{\MarginText
+                              {Interpersonal}Strong relationship building sk...
+
+? 
+! Undefined control sequence.
+l.223 \Description
+                  {\MarginText{Cognitive}Analytical, verbal, research, numer...
+
+? 
+! Undefined control sequence.
+l.223 \Description{\MarginText
+                              {Cognitive}Analytical, verbal, research, numer...
+
+? 
+! Undefined control sequence.
+l.225 \Description
+                  {\MarginText{Computer}Excel, Word, PowerPoint, Linux, Pyth...
+
+? 
+! Undefined control sequence.
+l.225 \Description{\MarginText
+                              {Computer}Excel, Word, PowerPoint, Linux, Pyth...
+
+? 
+! Undefined control sequence.
+l.227 \Description
+                  {\MarginText{Languages}English, Conversational French}
+? 
+! Undefined control sequence.
+l.227 \Description{\MarginText
+                              {Languages}English, Conversational French}
+? 
+! Undefined control sequence.
+l.231 \vspace
+             {1em} % Extra space between major sections
+? 
+[2] )</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "Alexander McGinn.pdf" (2 pages, 33290 bytes).
+PDF statistics:
+ 19 PDF objects out of 1000 (max. 8388607)
+ 12 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
