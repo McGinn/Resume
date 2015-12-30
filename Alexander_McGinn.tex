@@ -18,12 +18,11 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[letterpaper]{scrartcl}
+\documentclass[footinclude, a4paper]{scrartcl}
 
 \reversemarginpar % Move the margin to the left of the page 
 
 \newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} % New command defining the margin text style
-
 
 \newcommand{\TitleText}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\normalsize{#1}\par\normalsize\hspace{1.5em}} 
 
@@ -33,8 +32,9 @@
 
 \renewcommand{\cvheadingfont}{\huge\color{Maroon}} % Font color of your name at the top
 
-\usepackage{hyperref} % Required for adding links	and customizing them
-\hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon} % Set link colors
+\usepackage{hyperref} % Required for adding links and customizing them
+\hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Black
+} % Set link colors. Black for links because of lastpage footer reference.
 
 \newlength{\datebox}\settowidth{\datebox}{Spring 2011} % Set the width of the date box in each block
 
@@ -43,13 +43,39 @@
 
 \newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}} % Define a command for descriptions of each entry - change spacing and font sizes here
 
+\date{}
 
-\topmargin -1.0 in
+\usepackage{comment}
+
+%-----------HEADER and FOOTER (lastpages)--------------------
+
+\usepackage{lastpage} % Required for calculating the number of pages in the document
+\usepackage{ragged2e}
+
+\pagestyle{scrheadings}
+\clearscrheadfoot
+
+\cofoot{\Centering{Alexander McGinn}
+\newline
+\today
+\newline
+%\href{http://www.alexandermcginn.com}{alexandermcginn.com}
+
+Page \pagemark{} of \pageref{LastPage}
+}
+
+\rofoot{}
+
+
+
+\topmargin -0.5 in
+
 %----------------------------------------------------------------------------------------
 
 \begin{document}
 
 \thispagestyle{empty} % Stop the page count at the bottom of the first page
+
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
@@ -57,88 +83,48 @@
 
 \begin{cv}{\spacedallcaps{Alexander McGinn}}\vspace{1.5em} % Your name
 
-\noindent\spacedlowsmallcaps{Personal Information}\vspace{0.5em} % Personal information heading
-
-%\NewEntry{}{\textit{Born in Canada,}}{20 November 1987} % Birthplace and date
+\noindent\spacedlowsmallcaps{Contact Information}\vspace{0.5em} % Contact information heading
 
 \NewEntry{email}{\href{mailto:alexander.mcginn@gmail.com}{alexander.mcginn@gmail.com}} % Email address
 
-%\NewEntry{website}{\href{http://www.alexandermcginn.com}{http://www.alexandermcginn.com}} % Personal website
+\NewEntry{phone}{+1 (416) 662 9666} % Phone number(s)
 
-\NewEntry{phone}{+1 (416) 324 7759 (work), +1 (416) 662 9666 (cell)} % Phone number(s)
+\vspace{0.75em} % Extra white space between the contact information section and goal
 
-\vspace{0.75em} % Extra white space between the personal information section and goal
+\noindent\spacedlowsmallcaps{Summary}\vspace{1em} % Goal heading, could be used for a quotation or short profile instead
 
-%\noindent\spacedlowsmallcaps{Profile}\vspace{1em} % Goal heading, could be used for a quotation or short profile instead
-%\Description{\MarginText{}$\cdotp$\ Science undergraduate degree. Currently persuing CFA designation.}
+\Description{5+ years financial industry experience. Candidate in CFA and CAIA programs. Strong knowledge of Canadian investment funds landscape and industry trends. Strong knowledge of financial software and databases.}
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
-%\newpage
-\spacedlowsmallcaps{Education}\vspace{1em}
-
-
-\TitleText{\MarginText{2011}McGill University}
-
-\Description{\MarginText{Bachelor of Science}Cofounded Neuroscience Undergraduate Society. Member of the McGill Investment Club. Learned critical thinking skills. Studied how cognitive biases inform the decision making process. Learned how to understand technical scientific papers and communicate using a scientific and precise vocabulary.}
-
-%------------------------------------------------
-
-%\NewEntry{Current}{The University of California, Berkeley}
-%
-%\Description{\MarginText{Bachelor of Business Studies}GPA: 7.5\ \ $\cdotp$\ \ \textit{Commerce Specialization}\ \ $\cdotp$\ \ School: Business and Administration\newline
-%Description: This degree focussed heavily on important things such as personnel management and mundane paperwork.}
-
-%------------------------------------------------
-
-%\vspace{1em} % Extra space between major sections
-
-
-%----------------------------------------------------------------------------------------
-%	PROFESSIONAL ACCREDITATIONS
-%----------------------------------------------------------------------------------------
-
-\spacedlowsmallcaps{Professional Accreditations}\vspace{1em}
-
-\Description{\MarginText{CFA Institute}2015\ \ $\cdotp$\ \ CFA Level II Candidate}
-
-\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
-
-\Description{\MarginText{CAIA Association}2015\ \ $\cdotp$\ \ CAIA Level II Candidate}
-
-\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
-
-\Description{\MarginText{CSI}2014\ \ $\cdotp$\ \ Financial Markets Risk Management Course}
-
-\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
-
-\Description{2012\ \ $\cdotp$\ \ Derivatives Fundamentals and Options Licensing Course}
-
-\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
-
-\Description{2011\ \ $\cdotp$\ \ Canadian Securities Course}
-
-%\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
-%\Description{\MarginText{IFSE}2010\ \ $\cdotp$\ \ Canadian Investment Funds Course}
-%\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
-%\Description{\MarginText{Bloomberg}2010\ \ $\cdotp$\ \ Bloomberg Terminal Certificate}
-
-
-
+\vspace{1em} % Extra space between major sections
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
 \noindent\spacedlowsmallcaps{Work Experience}\vspace{1.5em}
 
-\TitleText{\MarginText{Oct 2013--Present}Product Research Analyst,  \textsc{Invesco Canada}}
+\TitleText{\MarginText{Oct 2013--Present}Product Research Analyst,  \textsc{Invesco}}
 
-\Description{\MarginText{Summary}Multi-disciplinary role with responsibilities in three broad areas:}
-\Description{\MarginText{Portfolio Oversight}Preparation/maintenance of portfolio attribution for portfolio managers which facilitate their investment decision making. Responsibilities include analyzing portfolios to understand their construction, the attributes of the securities within a portfolio, what factors investment managers are exposed to, what risks are present within the portfolio and how much of the risk budget is spent on different factors. This gives investment managers a clearer understanding of the inherent risks the portfolio is facing which can facilitate the decision making process.Also involved in oversight of asset allocation portfolios and ensuring tactical limits have not been breached. Responsible for preparing/analyzing risk oversight packages that provide a detailed overview of portfolio activity, performance drivers, portfolio characteristics, and factor risk exposures.} 
+\Description{\MarginText{Summary}Providing ongoing product support and communications to clients, providing research and analysis on competitors and industry trends, ensuring the integrity of existing products through a rigorous oversight process, and researching and launching new products.
+% Performing research and analysis on competitors, industry trends and developments, and some product reporting.
+}
+\Description{\MarginText{Responsibilities}$\cdotp$Preparation, maintenance, and interpretation of portfolio attribution reports. 
+%\newline$\cdotp$Analyzing portfolios to understand their construction, the attributes of the securities within a portfolio, what factors investment managers are exposed to, what risks are present within the portfolio and how much of the risk budget is spent on different factors.
+\newline$\cdotp$Develop and maintain peer group reports comparing products to competitors by qualitative and quantitative factors.
+\newline$\cdotp$Identify opportunities to create sales-oriented competitor comparisons.
+\newline$\cdotp$Monitor trends and identify opportunities for that support retail distribution channels (MFDA, IIROC)
+%\newline$\cdotp$Oversight of asset allocation portfolios and ensuring tactical limits have not been breached.
+\newline$\cdotp$Preparing/analyzing risk oversight packages that provide a detailed overview of portfolio activity, performance drivers, portfolio characteristics, and factor risk exposures.
+} 
 
-\Description{\MarginText{Sales Support}Assisted and supported product research team and product managers}
+\Description{\MarginText{Accomplishments}$\cdotp$Provided competitive analysis resulting in several large tickets (\$4M+)
+\newline$\cdotp$Designed and created unique tools used by sales team
+\newline$\cdotp$Automated numerous reports thereby increasing their robustness and accuracy, and creating new efficiencies
+}
 
-\Description{\MarginText{Competitive Intelligence}Assisted and supported product research team and product managers}
+\excludecomment{mycomments}
+
+\begin{mycomments}
+ Product Research•	Develop and maintain peer group reports comparing Invesco products to competitors by qualitative and quantitative factors, to be used by Sales, Product Management, Marketing and other departments•	Develop and maintain head-to-head analytics capabilities to compare individual Invesco Products to specific competitors•	Research and create opportunities to create sales-oriented competitor comparisons•	Respond to ad hoc requests to assess or analyze advisor portfolios with substitute Invesco products•	Provide reviews/analysis of dealer recommended lists and wrap programs to our National Accounts team, with the objective of identifying opportunities to displace competing products or recommend enhancements with Invesco productsIndustry/Market Research•	Read third party industry research to stay on top of product trends and industry developments (e.g. Investor Economics, Greenwich Research, etc.)•	Monitor trends and identify opportunities for Invesco Canada that support our retail  distribution channels (MFDA, IIROC)•	Create and maintain internal reporting on industry product trends (asset class, category, sales, redemptions, market share) to be supplied to Product Development, Product Management, Marketing, Sales and Executives•	Act as a resource within Invesco Canada to provide insights into product trends in the industry•	Liaise with US Product & Market Research to maintain an understanding of US product and industry trends that may affect the Canadian industry•	Gather and document research insights on the institutional market through dialogue with our institutional Sales team, RFP team and other sources to augment reported researchProduct Reporting •	Prepare quarterly risk oversight packages for Invesco Canada products•	Provide annual audit of Invesco Canada’s product information with 3rd party vendors•	Support Institutional/National Accounts with regular and ad-hoc reporting requirements•	Provide some product performance reporting for Invesco Canada to supplement that provided by the Global Performance Measurement & Risk team
+\end{mycomments}
 
 %\newline $\cdotp$\ Updated fund comparisons and sales decks
 %\newline $\cdotp$\ Generated ad-hoc analytical reports
@@ -147,90 +133,108 @@
 %----------------------------------------------------------------------------------------
 
 \vspace{0.5em}
-\TitleText{\MarginText{July--Sept 2013}Product Marketing Intern,  \textsc{Invesco Canada}}
+\TitleText{\MarginText{July--Sept 2013}Product Marketing Intern,  \textsc{Invesco}}
 
-\Description{\MarginText{Summary}Coordinated with multiple partners to promote and maintain product brands. Clearly and effectively communicated to ensure successful execution and timely delivery of projects.}
-%\Description{\MarginText{Accomplishmen¢£ts}$\cdotp$\ Managed delivery of marketing collateral
-%\newline $\cdotp$\ Demonstrated attention to detail - noticed and corrected document oversights
-%\newline $\cdotp$\ Provided input and generated ideas to position product brand}
+\Description{\MarginText{Summary}Coordinated with multiple partners to promote and maintain product brands. Clearly and effectively communicated to ensure successful execution and timely delivery of projects. Demonstrated attention to detail - noticed and corrected document oversights. Provided input and generated ideas to position product brands.}
 
 %----------------------------------------------------------------------------------------
 
 \vspace{0.5em}
-\TitleText{\MarginText{2010--June 2013}Client Relationship Associate,  \textsc{Invesco Canada}}
+\TitleText{\MarginText{2010--June 2013}Client Relationship Associate,  \textsc{Invesco}}
 
-\Description{\MarginText{Summary}Built relationships with financial advisors and their staff. Learned their business and client needs, and recommended investment solutions. Provided information on investment products, and provided competitive analysis on those products. Discussed individual client accounts and scenarios, and provided: tax information and forms, information on administrative procedures, investment product ideas. Also discussed the broad macroeconomic environment and its relevance to the investment advisor's business and their clients.}
-%\Description{\MarginText{Accomplishments}$\cdotp$\ Became product expert and lead numerous training sessions and presentations supporting rollout of PowerShares ETFs
-%\newline $\cdotp$\ Lead presentations on “The Invesco Story” ensuring comprehension of Invesco's history and corporate brand strategy (Invesco, Trimark, PowerShares)
-%\newline $\cdotp$\ Generated numerous sales leads for Sales department
-%\newline $\cdotp$\ Chosen to work on joint Sales initiative to proactively communicate Invesco's value proposition to select financial advisors. Tactically positioned Invesco's product offering to generate sales and reduce net redemptions}
+\Description{\MarginText{Summary}Built relationships with financial advisors and their offices. Learned their business and client needs, and recommended investment solutions. Provided information on investment products, and provided competitive analysis on those products. Discussed individual client accounts and scenarios, and provided: tax information and forms, information on administrative procedures, investment product ideas. Also discussed the broad macroeconomic environment and its relevance to the investment advisor's business and their clients.}
 
-%\newline $\cdotp$\ Reviewing and editing outgoing email correspondence to ensure accuracy of content and consistency of presentation
-%\newline $\cdotp$\ Acting as a mentor and peer to provide support and expertise. Encouraging an open dialogue and sharing of best practices
-%\newline $\cdotp$\ Initiating significant projects to further departmental objectives. Coordinating with multiple parties to achieve results
-%\newline $\cdotp$\ Providing complete client service experience and support for walk-in clients
-%\newline $\cdotp$\ Consistently a top departmental performer
-%\newline $\cdotp$\ “Modelling the Way” Award recipient - continuous pursuit of performance excellence
-%\newline $\cdotp$\ Treasurer for Social Committee (2010 - 2011) 
+
+\vspace{1em} % Extra space between major sections
+
+
+%-----------HEADER and FOOTER (firstpage)--------------------
+
+\clearscrheadfoot
+\thispagestyle{scrheadings}
+
+\cofoot{Page \pagemark{} of \pageref{LastPage}}
+
+
+\newpage
 %----------------------------------------------------------------------------------------
-%\vspace{0.5em}
-%\TitleText{\MarginText{2004--2010}Box-Office Supervisor,  \textsc{Confederation Centre of the Arts}}
-%
-%\Description{\MarginText{Summary}Supervised the box-office of a national performing arts centre.}
-%\Description{\MarginText{Accomplishmen¢£ts}$\cdotp$\ Oversaw and managed staff of 10 - 15
-%\newline $\cdotp$\ Helped to foster a positive culture
-%\newline $\cdotp$\ Created sales reports in Excel
-%\newline $\cdotp$\ Balanced end-of-day transactions
-%\newline $\cdotp$\ Processed large payments and group bookings}
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Education}\vspace{1em}
+
+\TitleText{Bachelor of Science,  \textsc{McGill University}}
+
+%\TitleText{%\MarginText{2011}
+%McGill University}
+
+\Description{\MarginText{Summary}Learned critical thinking skills. Studied how cognitive biases inform the decision making process. Learned how to understand technical scientific papers and communicate using a scientific and precise vocabulary.}
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+\Description{Neuroscience Undergraduate Society (cofounding member.)}
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+\Description{McGill Investment Club.}
+
+
+
+\vspace{1em} % Extra space between major sections
+
 
 %----------------------------------------------------------------------------------------
-%\vspace{0.5em}
-%\TitleText{\MarginText{2007--2008}VP Finance, \textsc{Neuroscience Undergraduates of McGill}}
-%
-%\Description{\MarginText{Summary}Cofounded a new departmental student society}
-%\Description{\MarginText{Accomplishments}$\cdotp$\ Helped to create society's constitution
-%\newline $\cdotp$\ Found new sources of revenue
-%\newline $\cdotp$\ Balanced cash flows, and held administrative responsibility for funds
-%\newline $\cdotp$\ Created monthly financial statements}
+%	PROFESSIONAL ACCREDITATIONS
+%----------------------------------------------------------------------------------------
 
-%------------------------------------------------
+\spacedlowsmallcaps{Professional Accreditations}\vspace{1em}
 
-%\NewEntry{2010--2011}{Summer Intern, \textsc{Initech Inc}  --- Chicago}
-%
-%\Description{\MarginText{Initech Inc}Rated "truly distinctive" for Analytical Skills and Teamwork. \\ Reference: Bill \textsc{Lumbergh}\ \ +1 (000) 111 1111\ \ $\cdotp$\ \ \href{mailto:bill@initech.com}{bill@initech.com}}
+\Description{\MarginText{CFA Institute}%2016\ \ $\cdotp$\ \ 
+CFA Level II Candidate}
 
-%------------------------------------------------
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
 
-%\NewEntry{Jan-Mar 2011}{Computer Technician, \textsc{Buy More} --- Burbank}
-%
-%\Description{\MarginText{Buy More}Worked in the Nerd Herd and helped to solve computer problems by asking customers to turn their computers off and on again. \\ Reference: Big \textsc{Mike}\ \ +1 (000) 111 1111\ \ $\cdotp$\ \ \href{mailto:mike@buymore.com}{mike@buymore.com}}
+\Description{\MarginText{CAIA Association}%2016\ \ $\cdotp$\ \ 
+CAIA Level II Candidate}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{\MarginText{CSI}%2014\ \ $\cdotp$\ \ 
+Financial Markets Risk Management Course}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{%2012\ \ $\cdotp$\ \ 
+Derivatives Fundamentals and Options Licensing Course}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{%2011\ \ $\cdotp$\ \ 
+Canadian Securities Course}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{\MarginText{IFSE}%2010\ \ $\cdotp$\ \ 
+Canadian Investment Funds Course}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{\MarginText{Bloomberg}%2010\ \ $\cdotp$\ \ 
+Bloomberg Terminal Certificate}
+
+
 
 %------------------------------------------------
 
 \vspace{1em} % Extra space between major sections
-%------------------------------------------------
-
-%\NewEntry{Sept. 2012}{Publication Title}
-%
-%\Description{\MarginText{Full Journal Name}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nisl tellus, sodales non pulvinar in, adipiscing sit amet purus. Suspendisse sed facilisis diam. Sed ornare sem nec justo adipiscing nec venenatis lectus commodo. Mauris non neque ligula. Pellentesque sed quam eu felis iaculis iaculis ac a leo. Suspendisse neque neque, placerat id adipiscing et, elementum eu sem.\\ Authors: John \textsc{Smith}, ~James \textsc{Smith}}
-
-%------------------------------------------------
-
-\vspace{1em} % Extra space between major sections
 
 %----------------------------------------------------------------------------------------
-%	OTHER SKILLS
+%	SKILLS
 %----------------------------------------------------------------------------------------
 
-\spacedlowsmallcaps{Other Skills}\vspace{1em}
+\spacedlowsmallcaps{Skills}\vspace{1em}
 
 %\Description{\MarginText{Interpersonal}Strong relationship building skills}
 
-\Description{\MarginText{Cognitive}Analytical, verbal, research, numeracy, strategic, and critical thinking skills}
+\Description{\MarginText{Competencies}Analytical mindset, detail-oriented, flexible and willing to listen for other people's opinions, team player, good communication skills (written and verbal,) strong research ability, strategic and critical thinking skills}
 
-\Description{\MarginText{Software}Excel, Bloomberg, Factset, Style Research,  Word, PowerPoint, Morningstar Direct, Zephyr StyleADVISOR, Linux, Python, Matlab}, %, Adobe CS5}
-
-\Description{\MarginText{Languages}English, Conversational French}
+\Description{\MarginText{Software}MS Office Suite (Excel, Word, PowerPoint,) Institutional databases (eVestment, Mercer Insight,) Bloomberg, Factset, Style Research,  Morningstar Direct, Zephyr StyleADVISOR}%, Linux, Python, Matlab, Adobe CS5}
 
 %------------------------------------------------
 
@@ -239,44 +243,17 @@
 %----------------------------------------------------------------------------------------
 %%	OTHER INFORMATION
 %%----------------------------------------------------------------------------------------
-%
-%\spacedlowsmallcaps{Other Information}\vspace{1em}
-%
-%\Description{\MarginText{Awards}2011\ \ $\cdotp$\ \ School of Business Postgraduate Scholarship}
-%
-%\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
-%
-%\Description{2010\ \ $\cdotp$\ \ Top Achiever Award -- Commerce}
-%
-%%------------------------------------------------
-%
-%\vspace{1em}
-%
-%\Description{\MarginText{Communication Skills}2010\ \ $\cdotp$\ \ Oral Presentation at the California Business Conference}
-%
-%\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
-%
-%\Description{2009\ \ $\cdotp$\ \ Poster at the Annual Business Conference in Oregon}
-%
-%%------------------------------------------------
-%
-%\vspace{1em}
-%
-%\newlength{\langbox} % Create a new length for the length of languages to keep them equally spaced
-%\settowidth{\langbox}{English} % Length equals the length of "English" - if you have a longer language in your list put it here
-%
-%\Description{\MarginText{Languages}\parbox{\langbox}{\textsc{English}}\ \ $\cdotp$\ \ \ Mothertongue}
-%
-%\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
-%
-%\Description{\parbox{\langbox}{\textsc{Spanish}}\ \ $\cdotp$\ \ \ Intermediate (conversationally fluent)}
-%
-%\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
-%
-%\Description{\parbox{\langbox}{\textsc{Dutch}}\ \ $\cdotp$\ \ \ Basic (simple words and phrases only)}
-%
-%\vspace{1em} % Negative vertical space to counteract the vertical space between every \Description command
-%
+
+\newlength{\langbox} % Create a new length for the length of languages to keep them equally spaced
+\settowidth{\langbox}{English} % Length equals the length of "English" - if you have a longer language in your list put it here
+
+\Description{\MarginText{Languages}\parbox{\langbox}{\textsc{English}}\ \ $\cdotp$\ \ \ Native}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{\parbox{\langbox}{\textsc{French}}\ \ $\cdotp$\ \ \ Intermediate (conversationally proficient)}
+
+
 %%------------------------------------------------
 %
 %%\Description{\MarginText{Interests}Piano\ \ $\cdotp$\ \ Cooking\ \ $\cdotp$\ \ Running\ \ $\cdotp$\ \ Chess\ \ $\cdotp$\ \ Dancing}
