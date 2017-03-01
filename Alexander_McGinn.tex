@@ -56,15 +56,13 @@
 
 %-----------HEADER and FOOTER (lastpages)--------------------
 
-\pagestyle{scrheadings}
 \clearscrheadfoot
+\pagestyle{scrheadings}
 
-\cofoot{\Centering{Alexander McGinn}
-\newline
-\today
 %\newline
 %\href{http://www.alexandermcginn.com}{alexandermcginn.com}
-\newline
+%\newline
+\cofoot{
 \pagemark{} of \pageref{LastPage}
 }
 
@@ -85,13 +83,14 @@
 
 \begin{cv}{\spacedallcaps{Alexander McGinn}}\vspace{1.5em} % Your name
 
+
 \noindent\spacedlowsmallcaps{Contact Information}\vspace{0.5em} % Contact information heading
 
 \NewEntry{email}{\href{mailto:alexander.mcginn@gmail.com}{alexander.mcginn@gmail.com}} % Email address
 
-\NewEntry{phone}{+1 (416) 662 9666} % Phone number(s)
+\NewEntry{phone}{\href{tel:1-416-662-9666}{(416) 662 9666}} % Phone number(s)
 
-\vspace{0.75em} % Extra white space between the contact information section and goal
+%\vspace{0.75em} % Extra white space between the contact information section and goal
 
 %\noindent\spacedlowsmallcaps{Summary}\vspace{1em} % Goal heading, could be used for a quotation or short profile instead
 
@@ -99,21 +98,20 @@
 
 %\vspace{1em} % Extra space between major sections
 
-
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 
-\spacedlowsmallcaps{Education}\vspace{1em}
+%\spacedlowsmallcaps{Education}\vspace{1em}
 
-\TitleText{Bachelor of Science,  \textsc{McGill University}}
+%\TitleText{Bachelor of Science,  \textsc{McGill University}}
 
 %\TitleText{%\MarginText{2011}
 %McGill University}
 
-\Description{\MarginText{Summary}Learned critical thinking skills. Studied how cognitive biases inform the decision making process. Learned how to understand technical scientific papers and communicate using a scientific and precise vocabulary.}
-\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
-\Description{\MarginText{Extracurricular}$\cdotp$\ Neuroscience Undergraduate Society (cofounding member), McGill Investment Club, Political Issues Club, Model UN}
+%\Description{\MarginText{Summary}Learned critical thinking skills. Studied how cognitive biases inform the decision making process. Learned how to understand technical scientific papers and communicate using a scientific and precise vocabulary.}
+%\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+%\Description{\MarginText{Extracurricular}$\cdotp$\ Neuroscience Undergraduate Society (cofounding member), McGill Investment Club, Political Issues Club, Model UN}
 %\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
 %\Description{$\cdotp$\ Political Issues Club}
 %\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
@@ -130,7 +128,12 @@
 %	PROFESSIONAL ACCREDITATIONS
 %----------------------------------------------------------------------------------------
 
-\spacedlowsmallcaps{Professional Accreditations}\vspace{1em}
+\spacedlowsmallcaps{Education \& Professional Accreditations}\vspace{1em}
+
+\Description{\MarginText{McGill University}%2017\ \ $\cdotp$\ \ 
+Bachelor of Science (Neuroscience Undergraduate Society, McGill Investment Club, Political Issues Club, Model UN)}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
 
 \Description{\MarginText{CFA Institute}%2017\ \ $\cdotp$\ \ 
 CFA Level III Candidate}
@@ -143,7 +146,7 @@ Chartered Alternative Investment Analyst (CAIA)}
 \vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
 
 \Description{\MarginText{Marquee Group}%2016\ \ $\cdotp$\ \ 
-Financial Modelling Course}
+Accredited Financial Modeler (AFM)}
 
 \vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
 
@@ -162,10 +165,10 @@ Canadian Securities Course}
 
 \vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
 
-\Description{\MarginText{IFSE}%2010\ \ $\cdotp$\ \ 
-Canadian Investment Funds Course}
+%\Description{\MarginText{IFSE}%2010\ \ $\cdotp$\ \ 
+%Canadian Investment Funds Course}
 
-\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+%\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
 
 \Description{\MarginText{Bloomberg}%2010\ \ $\cdotp$\ \ 
 Bloomberg Terminal Certificate}
@@ -178,26 +181,31 @@ Bloomberg Terminal Certificate}
 
 \TitleText{\MarginDate{Oct 2013--Present}Product Research Analyst,  \textsc{Invesco}}
 
-\Description{\MarginText{Summary}Providing product support and communications to clients, providing research and analysis on competitors and industry trends, ensuring the integrity of existing products through a rigorous oversight process, and researching and launching new products.
+\Description{\MarginText{Summary}Analyzing investment funds to understand their construction; identifying attributes of securities within portfolios, what factors managers are exposed to, and what risks are present. Producing actionable analysis for both internal, and external, business partners.
 % Performing research and analysis on competitors, industry trends and developments, and some product reporting.
 }
 \Description{\begin{itemize}
-\item \MarginText{Responsibilities}Preparing, maintaining, and interpreting portfolio attribution reports. 
-%\newline$\cdotp$Analyzing portfolios to understand their construction, the attributes of the securities within a portfolio, what factors investment managers are exposed to, what risks are present within the portfolio and how much of the risk budget is spent on different factors.
-\item  Developing and maintaining peer group reports comparing products to competitors by qualitative and quantitative factors.
-\item Identifying opportunities to create sales-oriented competitor comparisons.
-\item Monitoring trends and identifying opportunities that support retail distribution channels
+\item \MarginText{Responsibilities \& Accomplishments}Performed product shelf SWOT analysis for firm and competitors to identify opportunities for product launches, mergers, or corporate actions. 
+%\item  Developing and maintaining peer group reports comparing products to competitors by qualitative and quantitative factors.
+%\item Identifying opportunities to create sales-oriented competitor comparisons.
+%\item Monitoring trends and identifying opportunities that support retail distribution channels
 %\item  Oversight of asset allocation portfolios and ensuring tactical limits have not been breached.
-\item Preparing/analyzing risk oversight packages that provide a detailed overview of portfolio activity, performance drivers, portfolio characteristics, and risk factor exposures.
+%\item Preparing/analyzing risk oversight packages that provide a detailed overview of portfolio activity, performance drivers, portfolio characteristics, and risk factor exposures.
+%\item Found additional efficiencies and automation for recurring reporting responsibilities.
+\item Built investment fund scorecard to identify best focus list of opportunities for sales team.
+\item Responded to RFPs under extremely tight deadlines.
+\item Provided backup trading execution support for PowerShares ETFs.
+\item Responded to requests from institutional and retail sales channels to position investment funds against, or as a compliment to, competitor funds.
+\item Provided analysis to sales team directly resulting in 10s of millions in additional sales.
 \end{itemize}
 }
 
-\Description{\begin{itemize}
-\item \MarginText{Accomplishments}Provided competitive analysis resulting in several large sales tickets
-\item  Designed and implemented unique tools used by sales team
-\item  Automated numerous reports thereby increasing their robustness and accuracy, and creating new efficiencies
-\end{itemize}
-}
+%\Description{\begin{itemize}
+%\item \MarginText{Accomplishments}Provided competitive analysis resulting in several large sales tickets
+%\item  Designed and implemented unique tools used by sales team
+%\item  Automated numerous reports thereby increasing their robustness and accuracy, and creating new efficiencies
+%\end{itemize}
+%}
 
 \excludecomment{mycomments}
 
@@ -211,21 +219,21 @@ Bloomberg Terminal Certificate}
 
 %----------------------------------------------------------------------------------------
 
-\vspace{0.5em}
-\TitleText{\MarginDate{July--Sept 2013}Product Marketing Intern,  \textsc{Invesco}}
+%\vspace{0.5em}
+%\TitleText{\MarginDate{July--Sept 2013}Product Marketing Intern,  \textsc{Invesco}}
 
-\Description{\MarginText{Summary}Coordinated with multiple partners to promote and maintain product brands. Clearly and effectively communicated to ensure successful execution and timely delivery of projects. Demonstrated attention to detail - noted and corrected document oversights. Provided input and generated ideas to position product brands.}
+%\Description{\MarginText{Summary}Coordinated with multiple partners to promote and maintain product brands. Clearly and effectively communicated to ensure successful execution and timely delivery of projects. Demonstrated attention to detail - noted and corrected document oversights. Provided input and generated ideas to position product brands.}
 
 %----------------------------------------------------------------------------------------
 
-\vspace{0.5em}
-\TitleText{\MarginDate{2010--June 2013}Client Relationship Associate,  \textsc{Invesco}}
+%\vspace{0.5em}
+%\TitleText{\MarginDate{2010--June 2013}Client Relationship Associate,  \textsc{Invesco}}
 
-\Description{\MarginText{Summary}Built relationships with financial advisors and their offices. Learned their business and client needs, and recommended investment solutions. Provided information on investment products, and provided competitive analysis on those products. Discussed individual client accounts and scenarios, and provided: tax information and forms, information on administrative procedures, investment product ideas. Also discussed the broad macroeconomic environment and its relevance to the investment advisor's business and their clients.
-}
+%\Description{\MarginText{Summary}Built relationships with financial advisors and their offices. Learned their business and client needs, and recommended investment solutions. Provided information on investment products, and provided competitive analysis on those products. Discussed individual client accounts and scenarios, and provided: tax information and forms, information on administrative procedures, investment product ideas. Also discussed the broad macroeconomic environment and its relevance to the investment advisor's business and their clients.
+%}
 
 
-\vspace{1em} % Extra space between major sections
+%\vspace{1em} % Extra space between major sections
 
 %\newpage
 
@@ -241,9 +249,9 @@ Bloomberg Terminal Certificate}
 
 %\Description{\MarginText{Interpersonal}Strong relationship building skills}
 
-\Description{\MarginText{Competencies}Analytical mindset, detail-oriented, flexible and willing to listen for other people's opinions, team player, good communication skills (written and verbal,) strong research ability, strategic and critical thinking skills}
+\Description{\MarginText{Competencies \& Traits}Analytical mindset, detail-orientation, flexible and willing to listen for other opinions, team player, good communication skills (written and verbal,) strong research ability, critical thinking skills, eager to learn.}
 
-\Description{\MarginText{Software}MS Office Suite (Excel, Word, PowerPoint,) Institutional databases (eVestment, Mercer Insight,) Bloomberg, Factset, Style Research,  Morningstar Direct, Zephyr StyleADVISOR}%, Linux, Python, Matlab, Adobe CS5}
+\Description{\MarginText{Financial Software}Bloomberg, Excel, eVestment, Factset, Morningstar Direct, StyleResearch}%, Linux, Python, Matlab, Adobe CS5, Zephyr StyleADVISOR}
 
 %------------------------------------------------
 
@@ -256,11 +264,11 @@ Bloomberg Terminal Certificate}
 \newlength{\langbox} % Create a new length for the length of languages to keep them equally spaced
 \settowidth{\langbox}{English} % Length equals the length of "English" - if you have a longer language in your list put it here
 
-\Description{\MarginText{Languages}\parbox{\langbox}{\textsc{English}}\ \ $\cdotp$\ \ \ Native}
+%\Description{\MarginText{Languages}\parbox{\langbox}{\textsc{English}}\ \ $\cdotp$\ \ \ Native}
 
-\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+%\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
 
-\Description{\parbox{\langbox}{\textsc{French}}\ \ $\cdotp$\ \ \ Intermediate }
+%\Description{\parbox{\langbox}{\textsc{French}}\ \ $\cdotp$\ \ \ Intermediate }
 
 
 %%------------------------------------------------
@@ -268,6 +276,9 @@ Bloomberg Terminal Certificate}
 %%\Description{\MarginText{Interests}Piano\ \ $\cdotp$\ \ Cooking\ \ $\cdotp$\ \ Running\ \ $\cdotp$\ \ Chess\ \ $\cdotp$\ \ Dancing}
 %
 %%----------------------------------------------------------------------------------------
+\vspace{3em} % Extra space between major sections
+
+
 
 \end{cv}
 
