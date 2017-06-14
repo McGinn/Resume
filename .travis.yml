@@ -7,7 +7,7 @@ script:
 deploy:
   provider: releases
   api_key:
-    secure: [YOUR KEY]
+    secure: M5NL0MHwQxIGi/weRVJFpn9/5K8C24NCVhC0IFO0v9drbH2KGOJVF1S1uqxeQix5iXzzvDFXdkAopA5fm9UlPUFBre2d/n5Neb6KiSIHbMhQ+Qlkh+RiA3UMKNPHDV9leSTm7Ff0s1si4uTDoPdrtWnuJYSSWkNm+j5bxl+XKv6u04IONTXPyuELVDtj4injJRtc12V3zZpIVprXf8iwuHKy0pkYEkLhbCQD77I4lAxnYeFBgm7IMVsdg5qaRK6J+gTRkTR3haRLTTzQ+9jlqxcaKHdCnAm22Gp4mbTS724UULaUD0hGmn3DD7+HwZibV2NgeR43Wwnlp4/miBG465fx+WM9wUCd9rGhKKpR5Bx1B5R9i/d+Ov3m2z//gjmWySBPujvQBjQt2+uIzRGWweqy0wleAQ6Bk4Rkgm2Pu93/YtCak1Wtk2Zvcx5JSYKLBmq1+oHHgEH6J1Tles/DoKoQihaJeXMaWtNdtY7JtZjZ0010tOwzx6uAFUs+Qr6AI/G7baohNoT+4tYL330/SFnno1pRljcBRxx/m/oPcZcxVW3XYCJuqjWxuQqsotC+0jjhXb7QqbBV8v3uiXLpIPZtRbg5n9q1iYyDDDFBdiXzGFBydPGPp1gNSIPcLojh50ScC4nUpkwkRxakl0V9zC+UrOlHO7IET313zJk2wrE=
   file:
   - Alexander_McGinn.pdf
   skip_cleanup: true
