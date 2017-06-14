@@ -12,5 +12,3 @@ deploy:
   - Alexander_McGinn.pdf
   skip_cleanup: true
   overwrite: true
-  on:
-    tags: true
