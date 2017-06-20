@@ -10,5 +10,7 @@ deploy:
     secure: EvcdZx+Da42Rb2SFFCjNTonXeT+VAsZ24qbC+TzweoF86Q2Nzx6OdyiRDVo2j9ESG38h6e+TCQcKYTpbAm59xfpvlwL/ibie2IVGDob0T7MgJIrT/ze9WX9VT4jQjrff5V5AeEDWSKRHLULeNqkKh7+qm838TdvbWTc06+twye2Z7e03gosK4mK0xwF1jiqOcrJGtGvxOPOI2uX56k9f9QqkuBuAzIBA8YZpirLt7k73LiAOMxXgaIaC/urL9pm7t835zBgVYp6wqNzlQfoOJlyiRqX33W54SGp+7y+yOYyDC4LaiFQi2/0jTvDj2+qWxVl4iUWPDgEG7uDOtQiaDillHqomg+K9eWB4mKkE6qVoVFgS/GE33SXgxp53sqHV/8DP+ZUhNcgO+6KBE6gDFjGp2VgooThQ9gRnJttJjnzSRQLWjTO1okdg8RMKLPImZD2wIBe+5sbImzN6xMbzJI8ZTb9qyp5JQXXPot0xntnWGoCi3NXizT4FWrT+RspQInQFP9j3wbaH4OC+z32KiWcJLgc0jV2s4LAAhaiSaPk4inBrMlkQcXOfEXesnp4BNqRkvpM/cqmjisQEXgoE1yY8kfqg3rn9K9ShG7e5k65PUem26/mG/AjTmL8iOhxg4BJSi7eyJPIGX/xuFR7Bvr0i4FWSbmDPpzLURqd1ycw=
   file:
   - Alexander_McGinn.pdf
+  on:
+    tags: true
   skip_cleanup: true
   overwrite: true
